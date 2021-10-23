@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player 2 - Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap-grid.min.css" integrity="sha512-q0LpKnEKG/pAf1qi1SAyX0lCNnrlJDjAvsyaygu07x8OF4CEOpQhBnYiFW6YDUnOOcyAEiEYlV4S9vEc6akTEw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        nav >ul {
+            display:flex;
+        }
+        ul li{
+            list-style-type: none;
+            margin:0 20px;
+        }
+        ul li a{
+            text-decoration: none;
+            color:indigo;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        ul li:hover{
+            background-color: gray;
+        }
+       td,th{
+           border:1px solid gray;
+           padding: 0 10px;
+       }
+       table{
+           border-collapse: collapse;
+       }
+       .dropdown{
+           display: none;
+           position:absolute;
+           background-color:lightcoral;
+           padding:0;
+       }
+       .dropdown li{
+           margin:0;
+           padding:0 20px;
+       }
+       nav>ul>li:hover>ul{
+           display:block;
+       }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home-1</a></li>
+            <li><a href="#">Home-2</a></li>
+            <li><a href="#">Home-3</a></li>
+            <li><a href="#">Home-4</a>
+                <ul class="dropdown">
+                  <li><a href="">Link-1</a></li>
+                  <li><a href="">Link-2</a></li>
+                  <li><a href="">Link-3</a></li>
+                  <li><a href="">Link-4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Home-5</a></li>
+        </ul>
+    </nav>
+
+   <div class="container">
+        <h1>Let's play a game of thrown and there is nothing to hide okay</h1>
+        <h1><span id="playerOneScore">0</span> to <span id="playerTwoScore">0</span></h1>
+
+        <p>Playing upto :<span>5</span></p>
+        <input type="text" id="inputScore">
+        <button class="btn btn-primary" id="player1Btn">player1</button>
+        <button class="btn btn-primary" id="player2Btn">player2</button>
+        <button class="btn btn-primary" id="resetBtn">reset</button>
+   </div>
+
+   <div class="container">
+       <div class="blog">
+           <h3>myblog-1</h3>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo est fugit odit eum labore vitae inventore laudantium eligendi obcaecati ad nihil minus ea commodi voluptatum facere ratione, quasi non quibusdam! Numquam impedit dolorem nostrum saepe, repellat nobis facere dignissimos, quo delectus minus corporis perferendis ducimus natus, fugit culpa quas maxime?</p>
+       </div>
+       <div class="blog">
+           <h3>myblog-2</h3>
+           <p>Aliquid molestias odit sunt quibusdam cumque, eum magni in nostrum molestiae aut sapiente doloribus natus dolorem exercitationem dolore porro! Amet excepturi commodi quaerat itaque, eveniet ex voluptatum in ut. Consequatur itaque, deleniti officia distinctio aliquid dignissimos qui incidunt, maiores odio neque quae praesentium eius consectetur unde animi facere tenetur dolores.</p>
+       </div>
+       <div class="blog">
+           <h3>myblog-3</h3>
+           <p>Ad sed qui architecto tempore nam natus quaerat mollitia reiciendis corporis aliquam consequuntur facilis laboriosam, ipsum sapiente quod, amet assumenda rerum in iusto. Iure reiciendis, a sunt error, quaerat quia, beatae sint molestias veritatis labore quis laborum? Aspernatur deserunt, nesciunt ipsam voluptatibus iste odit, quibusdam amet eius, porro dolor eveniet.</p>
+       </div>
+       <div class="blog">
+           <h3>myblog-4</h3>
+           <p>Quas unde neque animi nesciunt dolorem, repellat temporibus voluptatum reiciendis molestias similique consequuntur quibusdam facilis praesentium explicabo, ut aut, maiores inventore quis veritatis deserunt itaque hic esse? Excepturi nihil culpa eos quod est, distinctio velit praesentium pariatur voluptatibus laboriosam vel iure perferendis, assumenda, voluptatum consectetur repudiandae quibusdam architecto nostrum placeat?</p>
+       </div>
+   </div>
+   <table>
+       <thead>
+        <tr>
+            <th>kemonn</th>
+            <th>na</th>
+            <th>vlo</th>
+            <th>nai</th>
+        </tr>
+       </thead>
+       <tbody>
+          
+           <tr>
+            <td>Stevejobs</td>
+            <td>1</td>
+            <td>kikhao</td>
+            <td>jkkldf</td>
+        </tr>
+        <tr>
+            <td>Stevekali</td>
+            <td>1</td>
+            <td>kikhao</td>
+            <td>jkkldf</td>
+        </tr>
+        <tr>
+            <td>Steveali</td>
+            <td>1</td>
+            <td>kikhao</td>
+            <td>jkkldf</td>
+        </tr>
+       </tbody>
+   </table>
+   <form action="">
+       <fieldset>
+           <legend>yoo to </legend>
+           <p>
+                <label for="chitoy"> <input type="radio" id="chitoy" name="pitha"> chitoy pitha</label>
+
+           </p>
+           <p>
+                <label for="vapa"> <input type="radio" id="vapa" name="pitha"> chitoy pitha</label>
+
+           </p>
+           <p>
+                <label for="tell"> <input type="radio" id="tell" name="pitha"> chitoy pitha</label>
+
+           </p>
+       </fieldset>
+       <fieldset>
+           <legend>Select your vortha</legend>
+           <p><label for="sorisa"><input type="checkbox" name="vortha" id="sorisa">Sorisa</label></p>
+           <p><label for="begun"><input type="checkbox" name="vorta" id="begun">begun</label></p>
+           <p><label for="hidol"><input type="checkbox" name="vorta" id="hidol">hidol</label></p>
+       </fieldset>
+       <textarea name="" id="" cols="30" rows="10"></textarea>
+       <button type="submit">Click to submit</button>
+   </form>
+   
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
